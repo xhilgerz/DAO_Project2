@@ -13,7 +13,7 @@ public class Project2 {
         inputs = new int[numRods];
         
         
-
+        
         for(int i = 2; i< args.length; i++){
             inputs[i-2] = Integer.parseInt(args[i]);
             //System.out.println(inputs[i-2]);
@@ -137,34 +137,5 @@ public class Project2 {
         return total;
     }
 
-    ; // Output: 21
-
-
-
-    private static int colby(int length){
-        
-        if (length <= 2){
-            return inputs[0]+inputs[1];
-        }
-
-        
-
-        return colby(length - 2) + colby(length-1);
-
-
-    }
         
 }
-
-/*
- * if (index < 0) {  // Base case: invalid index
-            return 0;
-        }
-        // Return current element + sum of all previous elements
-        int min = inputs[index] + useRecursiveAlgo(index - 1);
-        
-        return min;
-    }
- * 
- * 
- */
